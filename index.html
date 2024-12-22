@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🐾Pet Shop</div>
+        <nav>
+            <ul class="nav-links">
+            <li><a class="nav-link" href="#Home">Home</a></li>
+            <li><a class="nav-link" href="#Services">Service</a></li>
+            <li><a class="nav-link" href="#products">Product</a></li>
+            <li><a class="nav-link" href="#Testimonial">Testimonial</a></li>
+            <li><a class="nav-link" href="#Contact">Contact</a></li>
+        </ul>
+        </nav>
+    </header>
+      <!-- Hero -->
+    <section id="Home" class="Hero">
+        <div class="carousel">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/low-maintenance-pets-hamster-1643904852.jpg?crop=0.662xw:1.00xh;0.148xw,0&resize=980:*" alt="Pet 1" class="carousel-image" >
+            <img src="https://rukminim2.flixcart.com/image/850/1000/j8hnmvk0/poster/a/x/q/large-poster-cute-pet-animal-lover-poster-for-room-cats-dogs-original-imaeyhmksnvkgh48.jpeg?q=90&crop=false" alt="Pet 2" class="carousel-image.visible">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIlNWghrwP8FIUwKBSkb-lM6h2LCo6MyqboA&s" alt="Pet 3" class="carousel-image">
+        </div>
+      
+        <div class="Hero-text">
+            <h1>Welcome to Our Pet Shop</h1>
+            <p>Your one-stop destination for all your pet needs!</p>
+            <button id="exploreButton">Explore Now</button>
+        </div>
+    </section>
+    <!-- Service -->
+     <section id="Services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service">
+                <h3>Pet Gromming</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam illo delectus ratione, facilis esse!</p>
+            </div>
+            <div class="service">
+                <h3>Pet Gromming</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam illo delectus ratione, facilis esse!</p>
+            </div>
+            <div class="service">
+                <h3>Pet Gromming</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus quisquam illo delectus ratione, facilis esse!</p>
+            </div>
+        </div>
+     </section>
+     <!-- Products -->
+     <section id="products">
+        <h2>Our Products</h2>
+        <input type="text" id="searchbar" placeholder="Search Product"/>
+        <div class="product-list">
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Dog Food">
+                <h3>Premium Dog Food</h3>
+                <p>High-quality food for a healthy diet.</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Dog Food">
+                <h3>Premium Cat Food</h3>
+                <p>High-quality food for a healthy diet.</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Dog Food">
+                <h3>Premium Dog Food</h3>
+                <p>High-quality food for a healthy diet.</p>
+                <button class="buy-button">Buy Now</button>
+            </div>
+        </div>
+        <div id="cartMessage"></div>
+     </section>
+     <section id="testimonials">
+        <h1>What our customer says?</h1>
+        <div class="testimonial">
+           <p> "The grooming services are amazing! My dog has never looked better!"</p>
+            <span>-Sarha Jain</span>
+        </div>
+        <div class="testimonial">
+        <p> "Great products and quick delivery.Highly recommended"</p>
+            <span>-John D</span>
+        </div>
+     </section>
+     <section id="contact">
+        <div class="form">
+            <h2>Contact Us</h2>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="6" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </div>
+     </section>
+     <footer>
+        <p>&copy; 2024 Pet Shop. All rights reserved.</p>
+    </footer>
+    <script src="script.js"> </script>
+    </body>
+
+</html>

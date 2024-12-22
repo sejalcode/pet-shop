@@ -1,0 +1,261 @@
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+header .logo {
+    font-size: 2em;
+    font-weight: bold;
+
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+   
+}
+.nav-links .active {
+    background-color: #ff6b6b;
+    color: white;
+    border-radius: 5px;
+
+}
+.nav-links a{
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s ease, color o.3s ease; 
+    padding: 5px;
+}
+.nav-links a:hover {
+    background-color: #ff6b6b;
+    color: white;
+}
+/* hero */
+.Hero {
+    position: relative;
+    background-color: #f7f8fc;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+}
+.Hero .carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 30vh;
+}
+.carousel-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.carousel-image.visible {
+    opacity: 1;
+    text-transform: opacity 0.5s ease;
+} 
+.Hero h1{
+    font-size: 3.5em;
+    margin-bottom: 0.5em;
+    color: #333;
+
+}
+.Hero p{
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+    color: #355;
+
+}
+button{
+    background-color:#ff6b6b;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1em;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    transform:0.3s ease;
+}
+button:hover{
+    background-color: #eb5b5b;
+    transform: scale(1.05);
+
+}
+/* Services */
+
+#Services {
+    background-color: #ffffff;
+    padding: 4em 2em;
+    text-align: center;
+}
+#Services h2{
+    font-size:2.5em;
+    margin-bottom: 1em;
+    color: #333;
+}
+.service-list {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5em;
+
+}
+.service {
+    background-color: #ffffff;
+    padding: 2em;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.147);
+    border-radius: 10px;
+    transition: background 0.3s ease;
+    transform:0.3s ease;
+}
+.service:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.284);
+}
+
+/* Products */
+#products {
+    background-color: #f7f8fc;
+    padding: 4em 2em;
+    text-align: center;
+}
+.product-list {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5em;
+}
+.product {
+    background-color: white;
+    padding: 2em;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.147);
+    border-radius: 10px;
+    transition: background 0.3s ease;
+    transform:0.3s ease;
+}
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.284);
+}
+#searchbar {
+    width: 80%;
+    padding: 1em;
+    margin: 1em auto 2em ;
+    border: 1px solid#ccc ;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#testimonials {
+    background: #f0f0f0;
+    padding: 4em 2em;
+}
+
+#testimonials h2 {
+    font-size: 2.2em;
+    margin-bottom: 2em;
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: 0 auto 2em;
+    background: white;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testimonial p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 1em;
+}
+
+.testimonial span {
+    font-size: 1em;
+    color: #ff6b6b;
+}
+
+#contact{
+    background-color: #fef5f5;
+    padding:4rem 2rem;
+    text-align: center;
+    display: flex;
+    /* justify-content: center;  */
+    flex-direction: column;
+    
+
+}
+
+#contact h2 {
+    font-size: 2.2em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.form {
+    max-width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.form label {
+    font-size: 1em;
+    color: #333;
+}
+
+.form input,
+.form textarea,
+.form button {
+    padding: 0.8em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form textarea {
+    resize: none;
+}
+
+.form button {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form button:hover {
+    background: #e55757;
+}
+
+
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    font-size: 1em;
+}
